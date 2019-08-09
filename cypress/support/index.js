@@ -6,14 +6,15 @@ let polyfill;
 
 before(() => {
   const polyfillUrl = 'https://unpkg.com/unfetch/dist/unfetch.umd.js';
-  cy.request(polyfillUrl)
-    .then((response) => {
-      polyfill = response.body
-    })
+  cy.request(polyfillUrl).then(response => {
+    polyfill = response.body;
+  });
 });
 
-Cypress.on("window:before:load", win => {
+Cypress.on('window:before:load', win => {
+  // eslint-disable-next-line no-param-reassign
   delete win.fetch;
   win.eval(polyfill);
-  win.fetch = win.unfetch
+  // eslint-disable-next-line no-param-reassign
+  win.fetch = win.unfetch;
 });

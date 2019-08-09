@@ -3,7 +3,7 @@ describe('Index page', () => {
     cy.visit(`http://localhost:1234/`);
   });
 
-  it('should render App', function () {
+  it('should render App', () => {
     cy.screenshot('index');
   });
 });
