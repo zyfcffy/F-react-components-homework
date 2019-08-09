@@ -11,3 +11,4 @@ package-lock.json
 dist/
 cypress/videos/*
 cypress/screenshots/*
+.eslintcache

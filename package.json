@@ -8,7 +8,8 @@
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
     "cypress": "start-server-and-test start http://localhost:1234 cypress:run",
-    "format": "prettier --write \"**/*.{js,css,md}\""
+    "format": "prettier --write \"**/*.{js,css,md}\"",
+    "lint": "eslint . --cache --fix -f table"
   },
   "dependencies": {
     "react": "^16.8.6",
@@ -18,11 +19,20 @@
     "@babel/core": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "cypress": "^3.4.1",
+    "eslint": "5.0.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-cypress": "^2.6.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "^7.14.2",
     "husky": ">=1",
     "less": "^3.9.0",
     "lint-staged": ">=8",
     "parcel-bundler": "^1.12.3",
-    "prettier": "^1.18.2",
+    "prettier": "1.13.0",
     "start-server-and-test": "^1.10.0"
   },
   "babel": {
