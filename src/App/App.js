@@ -3,7 +3,7 @@ import './App.less';
 
 class App extends Component {
   render() {
-    return <div className="App">Hello World</div>;
+    return <div data-testid="app" className="App">Hello World</div>;
   }
 }
 
