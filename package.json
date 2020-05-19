@@ -52,13 +52,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,css,md}": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.js": [
-      "eslint \"src/\" --cache --fix --format table",
-      "git add"
-    ]
+    "*.{js,css,md}": "prettier --write",
+    "*.js": "eslint \"src/\" --cache --fix --format table"
   }
 }
