@@ -12,7 +12,7 @@
     "cypress:open": "cypress open",
     "cypress": "start-server-and-test start http://localhost:1234 cypress:run",
     "format": "prettier --write \"**/*.{js,css,md}\"",
-    "lint": "eslint . --cache --fix -f table"
+    "lint": "eslint \"src/\" --cache --fix --format table"
   },
   "dependencies": {
     "react": "^16.9.0",
@@ -46,11 +46,6 @@
     "prettier": "1.13.0",
     "start-server-and-test": "^1.10.0"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-react"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -62,7 +57,7 @@
       "git add"
     ],
     "*.js": [
-      "eslint --fix",
+      "eslint \"src/\" --cache --fix --format table",
       "git add"
     ]
   }

@@ -27,6 +27,7 @@
       {
         "devDependencies": true
       }
-    ]
+    ],
+    "import/prefer-default-export": "warn"
   }
 }

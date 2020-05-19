@@ -16,16 +16,6 @@ Jest is used for Unit Test.
 yarn test
 ```
 
-## Run Cypress
-
-Cypress is used for E2E test. There are two examples at `cypress/integration`:
-
-- index_spec.js
-  It renders index page without any stub for API request.
-- index_with_request_spec.js
-
-  It renders index page with stub for API request. `API` constant should be changed to the correct url once decided.
-
 ### Run Cypress Test with Web Server started
 
 ```
