@@ -1,0 +1,12 @@
+.ChatBox {
+  flex: 1;
+  padding: 20px 10px;
+  overflow:auto;
+  display:flex;
+  flex-direction:column-reverse;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

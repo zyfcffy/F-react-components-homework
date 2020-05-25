@@ -1,0 +1,36 @@
+.ChatMessage {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+
+  *:first-child {
+    margin-right: 10px;
+  }
+
+  .customer-avatar,
+  .robot-avatar {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+  }
+
+  .robot-avatar {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/robots-avatars-set/354/Robot_avatar___robot_robo_avatar_chatbot_chat-512.png");
+    background-color: white;
+  }
+
+  .customer-avatar {
+    background-image: url("https://i1.sndcdn.com/avatars-000277510549-36dbn1-t500x500.jpg");
+  }
+
+  .message-box {
+    max-width: 60%;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
